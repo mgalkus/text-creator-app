@@ -1,0 +1,35 @@
+:root {
+	// Row
+	--grid-row-size: 48px;
+	--row-gap: 16px;
+
+	// Column
+	--columns: 12;
+	--column-gap: 24px;
+
+	// Container
+	--page-padding: 32px;
+	--page-padding-tablet: 8px;
+	--page-width: calc(866px + var(--page-padding) + var(--page-padding));
+}
+
+// Can't use css variables in media queries
+$width-tablet: 920px;
+$width-mobile: 600px;
+
+.full-screen {
+	height: 100vh;
+	position: relative;
+}
+
+.removed {
+	display: none !important;
+}
+
+.position-fixed {
+	position: fixed;
+}
+
+.overflowMargin {
+	margin-left: calc(100vw - 100%);
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Text Creator</title>
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/main.e5703e5d.css">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700&display=swap" rel="stylesheet">
+	<script src="/js.fcffc47e.js"></script>
+
+<script src="/main.e5703e5d.js"></script></head>
+
+<body>
+	<div class="site-container">
+		<div class="fixed-header">
+			<img class="fixed-header-logo" src="/logo-black.ad8ff4e6.png" alt="Logo">
+			<div href="#" class="button-primary fixed-header-button">GENERATE TEXT</div>
+		</div>
+		<section class="landing">
+			<div class="landing-spinner-container">
+				<div class="spinner">
+					<div class="circle circle-1"></div>
+					<div class="circle circle-2"></div>
+				</div>
+				<div class="counter body"></div>
+			</div>
+			<p class="body landing-spinner-text text-center"> <br>Our AI is now generating texts
+				personalized just for you. <br> Just a second, good things can take time.
+			<div class="landing-waiting-error-container">
+				<img class="waiting-error-img" src="/waiting-error-img.6f8827d5.svg" alt="Speed icon">
+				<p class="body waiting-error-text text-center">Currently AI is working at full capacity and serving too
+					many people. 🤖 <br> Please start generation again (your text has been saved).</p>
+				<a href="#" class="button-primary waiting-error-button generation-button"> <img class="refresh-icon" src="/refresh.2539a82c.svg" alt=""> Generate Text</a>
+
+			</div>
+			<img src="/bubble.09eff098.svg" alt="Large circle" class="landing-bubble-1 landing-bubble removeable">
+			<img src="/bubble.09eff098.svg" alt="Large circle" class="landing-bubble-2 landing-bubble removeable">
+			<div class="landing-container container">
+				<a href="#" class="landing-logo-link"><img src="/logo-white.62f6e3ca.png" alt="Logo" class="landing-logo"></a>
+				<h1 class="h-1 landing-title text-center removeable">Project imitating <br> AI Text Creator
+				</h1>
+				<p class="body landing-text text-center removeable">AI Text Creator will instantly create trendy
+					and
+					professional texts
+					personalized
+					just for your website. Try it out - generate a paragraph of text with a single click of a
+					button.
+					It’s
+					that easy!
+				</p>
+
+				<div class="landing-disclaimer body text-center removeable">[ Dummy output texts used for current purposes ]</div>
+
+
+				<div class="landing-round-container removeable">
+					<div class="landing-dot"></div>
+				</div>
+
+				<div class="landing-settings-input" overflow-scroll="true">
+					<div class="backdrop-cross-container">
+						<img src="/cross-black.90c525f4.svg" alt="Exit" class="backdrop-cross">
+					</div>
+					<div class="landing-settings removeable">
+						<div class="landing-settings-top align-items-center">
+							<h2 class="h-2 landing-settings-title">Ai Settings</h2>
+							<div class="landing-settings-toggling-container">
+								<span class="line-v"></span>
+								<span class="line-h"></span>
+							</div>
+						</div>
+						<div class="landing-settings-bottom">
+							<div class="landing-settings-length-box">
+								<div class="body-small landing-settings-length-text">Length</div>
+								<div class="body-small landing-settings-length-number"></div>
+								<div class="landing-settings-slider-container"><input class="landing-settings-length-slider landing-settings-slider" type="range" min="1" max="1024" value="80" id="myRange">
+								</div>
+
+							</div>
+							<div class="landing-settings-uniqueness-box">
+								<div class="body-small landing-settings-uniqueness-text">Uniqueness</div>
+								<div class="body-small landing-settings-uniqueness-number"></div>
+
+								<div class="landing-settings-slider-container"><input class="landing-settings-uniqueness-slider landing-settings-slider" type="range" min="0.1" max="1" value="0.7" step="0.1" id="myRange">
+								</div>
+							</div>
+							<div class="landing-settings-deepness-box">
+								<div class="body-small landing-settings-deepness-text">Deepness</div>
+								<div class="body-small landing-settings-deepness-number"></div>
+								<div class="landing-settings-slider-container"><input class="landing-settings-deepness-slider landing-settings-slider" type="range" min="1" max="100" value="40" id="myRange">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="landing-input removeable">
+						<h2 class="h-2 landing-input-title">Insert your text</h2>
+						<div class="landing-input-textarea-div body"> </div>
+						<form class="landing-input-textarea-container"> <textarea class="landing-input-textarea body" autocomplete="off" placeholder="Write some text here and we will generate unique similar texts. Try to write a few accurate sentences related to your topic to have better generated results." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write some text here and we will generate unique similar texts. Try to write a few accurate sentences related to your topic to have better generated results.'"></textarea><img src="/cross-textarea.2b2c02f0.svg" alt="Remove" class="textarea-cross">
+						</form>
+						<div class="landing-input-count body-small">0/1000</div>
+						<a href="#" class="button-primary landing-input-generate-text-button generation-button">Generate
+							Text</a>
+					</div>
+				</div>
+			</div>
+		</p></section>
+		<section class="output">
+			<div class="output-container removeable">
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>

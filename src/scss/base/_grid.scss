@@ -1,0 +1,94 @@
+// Grid container
+.grid {
+	@media screen and (min-width: $width-tablet) {
+		display: grid;
+		grid-auto-rows: var(--grid-row-size);
+		row-gap: var(--row-gap);
+		grid-row-gap: var(--row-gap);
+		grid-template-columns: repeat(var(--columns), 1fr);
+		column-gap: var(--column-gap);
+		grid-column-gap: var(--column-gap);
+
+		// Allow stretching of grid rows
+		// Don't use for now
+		&.stretch {
+			grid-auto-rows: minmax(var(--grid-row-size), auto);
+		}
+
+		>* {
+			&:not([data-type="grid-ghost"]) {
+				&:not([data-type="grid-pattern"]) {
+					overflow: hidden;
+				}
+			}
+
+			&[data-type="grid-spacer"] {
+				grid-column-start: 1;
+				grid-column-end: 13;
+			}
+		}
+	}
+
+
+	// Wraps grid items in a row on mobile
+	@media screen and (max-width: $width-tablet) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+// Item properties
+// Vertical and horizontal alignment
+// Prefer to use align-self, justify-self properties for positioning!
+$alignments: align, justify;
+
+@each $alignment in $alignments {
+
+	.#{$alignment} {
+		&-self {
+			&-start {
+				#{$alignment}-self: flex-start;
+			}
+
+			&-center {
+				#{$alignment}-self: center;
+			}
+
+			&-end {
+				#{$alignment}-self: flex-end;
+			}
+
+			&-stretch {
+				#{$alignment}-self: stretch;
+			}
+		}
+
+		&-items {
+			&-start {
+				#{$alignment}-items: flex-start;
+			}
+
+			&-center {
+				#{$alignment}-items: center;
+			}
+
+			&-end {
+				#{$alignment}-items: flex-end;
+			}
+		}
+
+		&-content {
+			&-start {
+				#{$alignment}-content: flex-start;
+			}
+
+			&-center {
+				#{$alignment}-content: center;
+			}
+
+			&-end {
+				#{$alignment}-content: flex-end;
+			}
+		}
+	}
+}

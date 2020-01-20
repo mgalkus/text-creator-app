@@ -1,0 +1,21 @@
+:root {
+	--burger-border-radius: 0px;
+
+	--burger-bar-height: 2px;
+	--burger-bar-gap: 6px;
+	--burger-bar-color: var(--secondary);
+
+	--burger-box-width: 24px;
+	--burger-box-height: 18px;
+
+	--burger-transition-length: 0.4s;
+	--burger-transition-delay: 0.1s;
+	--burger-transition-timing-function: ease-in-out;
+	
+	--burger-container-animation-length: .25s;
+	--burger-container-animation-delay: .25s;
+	--burger-container-animation-timing-function: ease-in-out;
+	
+	--burger-container-animation-name-1: burger-fade-1;
+	--burger-container-animation-name-2: burger-fade-2;
+}

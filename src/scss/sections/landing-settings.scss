@@ -1,0 +1,128 @@
+.landing {
+	&-settings {
+		position: relative;
+		background: var(--light);
+		box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.05);
+		border-radius: 10px;
+		padding: 40px 48px;
+		z-index: 10;
+		transition: height 0.3s;
+		margin-bottom: 28px;
+
+		@media screen and (max-width: $width-tablet) {
+			padding: 0;
+			height: 48px;
+			margin-bottom: 10px;
+		}
+
+		&.active {
+			height: 296px;
+		}
+
+		&-top {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 24px;
+
+			@media screen and (max-width: $width-tablet) {
+				margin-bottom: 0;
+				padding: 16px 24px;
+				transition: padding 0.3s;
+			}
+
+			&.active {
+				padding: 28px 24px;
+			}
+		}
+
+		&-toggling-container {
+			position: relative;
+			width: 10px;
+			height: 10px;
+			display: none;
+
+			@media screen and (max-width: $width-tablet) {
+				display: block;
+			}
+
+			span {
+				position: absolute;
+				display: block;
+				border-radius: 1px;
+				-webkit-border-radius: 1px;
+				-moz-border-radius: 1px;
+				background: var(--primary-dark);
+				left: 50%;
+			}
+
+			.line-v {
+				width: 1px;
+				height: 10px;
+				opacity: 1;
+				transition: all 0.2s;
+
+				&.remove-v {
+					opacity: 0;
+				}
+			}
+
+			.line-h {
+				width: 1px;
+				height: 10px;
+				transform: rotate(-90deg);
+			}
+		}
+
+		&-bottom {
+			display: flex;
+			justify-content: space-between;
+
+			@media screen and (max-width: $width-tablet) {
+				opacity: 0;
+				transition: opacity 0.3s ease;
+				height: 0;
+			}
+
+			&.active {
+				opacity: 1;
+			}
+		}
+
+		&-length-box,
+		&-uniqueness-box,
+		&-deepness-box {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 204px;
+
+			@media screen and (max-width: $width-tablet) {
+				width: 100%;
+				float: left;
+				padding: 0 24px;
+
+				&:not(:last-of-type) {
+					padding-bottom: 29px;
+				}
+			}
+		}
+
+		&-length-text,
+		&-uniqueness-text,
+		&-deepness-text {
+			margin-bottom: 12px;
+			font-size: 14px;
+
+			@media screen and (max-width: $width-tablet) {
+				margin-bottom: 0;
+			}
+		}
+
+		&-length-number,
+		&-uniqueness-number,
+		&-deepness-number {
+			font-size: 14px;
+		}
+	}
+}

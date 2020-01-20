@@ -1,0 +1,34 @@
+// Content container
+.container {
+	margin: 0 auto;
+	max-width: var(--page-width);
+	width: 100%;
+	padding-left: var(--page-padding);
+	padding-right: var(--page-padding);
+
+	&.full-width {
+		max-width: 100%;
+	}
+
+	&.no-padding {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@media screen and (max-width: $width-tablet) {
+		padding-left: var(--page-padding-tablet);
+		padding-right: var(--page-padding-tablet);
+	}
+
+	+ .container-background {
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: -1;
+		max-width: 100%;
+		width: 100%;
+		display: flex;
+	}
+}

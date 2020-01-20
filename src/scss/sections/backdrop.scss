@@ -1,0 +1,43 @@
+.landing-settings-input {
+	&.in-backdrop {
+		position: fixed;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 866px;
+
+		@media screen and (max-width: $width-tablet) {
+			width: calc(100vw - 16px);
+			left: 8px;
+			top: 0;
+			transform: unset;
+			max-height: 100%;
+			overflow: scroll;
+		}
+
+		.backdrop-cross-container {
+			border-radius: 50%;
+			background: var(--light);
+			width: 32px;
+			height: 32px;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			margin-left: auto;
+			margin-bottom: 40px;
+
+			@media screen and (max-width: $width-tablet) {
+				margin-bottom: 16px;
+			}
+		}
+
+		.backdrop-cross {
+			width: 10px;
+			height: 10px;
+			display: block;
+		}
+	}
+
+	.backdrop-cross-container {
+		display: none;
+	}
+}

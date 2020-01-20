@@ -1,0 +1,23 @@
+:root {
+	--button-border-radius: 100px;
+	--button-border-width: 1px;
+	--button-padding-x: 40px;
+	--button-padding-y: 11px;
+
+	// Buttons
+	--color-text-btn-primary: var(--light);
+	--color-bg-btn-primary: linear-gradient(180deg, var(--accent-1) 0%, var(--accent-2) 100%);
+	--color-border-btn-primary: transparent;
+	--color-border-btn-primary-hover: transparent;
+
+	--color-text-btn-primary-hover: var(--light);
+	--color-bg-btn-primary-hover: linear-gradient(180deg, var(--accent-1) 0%, var(--accent-2) 100%);
+
+	--color-text-btn-primary-down: var(--light);
+	--color-bg-btn-primary-down: linear-gradient(180deg, var(--accent-1) 0%, var(--accent-2) 100%);
+	--color-border-btn-primary-down: transparent;
+
+	--color-text-btn-primary-disabled: var(--grey-500);
+	--color-bg-btn-primary-disabled: var(--grey-400);
+	--color-border-btn-primary-disabled: transparent;
+}

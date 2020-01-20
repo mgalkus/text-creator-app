@@ -1,0 +1,158 @@
+.landing {
+	textarea,
+	input[type='text'] {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+		box-shadow: none !important;
+	}
+
+	&-input {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		background: var(--light);
+		box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.05);
+		border-radius: 10px;
+		padding: 40px 48px;
+		z-index: 10;
+		transition: padding 0.5s, height 0.5s;
+
+		@media screen and (max-width: $width-tablet) {
+			padding: 28px 0 40px 0;
+		}
+
+		&-title {
+			margin-bottom: 24px;
+
+			@media screen and (max-width: $width-tablet) {
+				margin-left: 24px;
+			}
+		}
+
+		&-textarea-div {
+			overflow: hidden;
+			word-wrap: break-word;
+			white-space: pre-wrap;
+			width: 100%;
+			height: 0px;
+			border: none;
+			-webkit-appearance: none;
+			outline: none;
+		}
+
+		&-textarea-container {
+			position: relative;
+
+			@media screen and (max-width: $width-tablet) {
+				margin: 0 12px;
+			}
+			.textarea-cross {
+				display: none;
+			}
+			&.on-input {
+				.landing-input-textarea {
+					padding: 16px 58px 16px 20px;
+
+					@media screen and (max-width: $width-tablet) {
+						padding: 12px 38px 12px 12px;
+					}
+				}
+
+				.textarea-cross {
+					position: absolute;
+					display: block;
+					width: 18px;
+					height: 18px;
+					top: 21px;
+					right: 20px;
+					cursor: pointer;
+
+					@media screen and (max-width: $width-tablet) {
+						width: 14px;
+						height: 14px;
+						top: 18px;
+						right: 12px;
+					}
+				}
+			}
+		}
+		&-textarea {
+			width: 100%;
+			padding: 16px 20px;
+			min-height: 144px;
+			color: var(--dark);
+			border: 1px solid var(--grey-300);
+			resize: none;
+			overflow: hidden;
+			margin-bottom: 16px;
+			text-align: left;
+			outline: none;
+
+			@media screen and (max-width: $width-tablet) {
+				padding: 12px;
+			}
+
+			&::placeholder {
+				line-height: 28px;
+			}
+
+			@media screen and (max-width: $width-tablet) {
+				// Creating scroll bar similar to default one, as default one doesn't show in browsers in mobile. !important is needed sometimes //
+				&::-webkit-scrollbar {
+					-webkit-appearance: none;
+				}
+
+				&::-webkit-scrollbar:vertical {
+					width: 7px !important;
+					height: 100% !important;
+				}
+
+				&::-webkit-scrollbar-track:vertical {
+					box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+					-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+					-webkit-border-radius: 10px !important;
+					border-radius: 10px !important;
+				}
+
+				&::-webkit-scrollbar-track:horizontal {
+					visibility: hidden;
+				}
+
+				&::-webkit-scrollbar-thumb {
+					-webkit-border-radius: 10px !important;
+					border-radius: 10px !important;
+					background: rgba(0, 0, 0, 0.3) !important;
+					box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+					-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+				}
+			}
+
+			&.red-border {
+				border-color: var(--accent-2-dark);
+			}
+		}
+
+		&-count {
+			color: var(--grey-200);
+			margin-left: auto;
+			margin-bottom: 6px;
+			line-height: 18px;
+
+			@media screen and (max-width: $width-tablet) {
+				margin-right: 12px;
+			}
+
+			&.too-long {
+				color: var(--accent-2);
+			}
+		}
+
+		&-generate-text-button {
+			box-shadow: none;
+			transition: box-shadow 0.3s;
+			width: max-content;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+@media screen and (min-width: $width-tablet) {
+	@for $i from 1 through 6 {
+		.mt-#{$i} {
+			margin-top: calc(#{$i} * (var(--row-gap) + var(--grid-row-size)));
+		}
+
+		.mb-#{$i} {
+			margin-bottom: calc(#{$i} * (var(--row-gap) + var(--grid-row-size)));
+		}
+
+		.pt-#{$i} {
+			padding-top: calc(#{$i} * (var(--row-gap) + var(--grid-row-size)));
+		}
+
+		.pb-#{$i} {
+			padding-bottom: calc(#{$i} * (var(--row-gap) + var(--grid-row-size)));
+		}
+	}
+
+	/* 1 row or row gap height margin spacing */
+	.m {
+		&t {
+			&-row {
+				margin-top: var(--grid-row-size);
+			}
+
+			&-gap {
+				margin-top: var(--row-gap);
+			}
+		}
+
+		&b {
+			&-row {
+				margin-bottom: var(--grid-row-size);
+			}
+
+			&-gap {
+				margin-bottom: var(--row-gap);
+			}
+		}
+
+	}
+
+	/* 1 row or row gap height margin spacing */
+	.p {
+		&t {
+			&-row {
+				padding-top: var(--grid-row-size);
+			}
+
+			&-gap {
+				padding-top: var(--row-gap);
+			}
+		}
+
+
+		&b {
+			&-row {
+				padding-bottom: var(--grid-row-size);
+			}
+
+			&-gap {
+				padding-bottom: var(--row-gap);
+			}
+		}
+	}
+}

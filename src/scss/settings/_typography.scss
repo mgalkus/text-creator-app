@@ -1,0 +1,85 @@
+:root {
+	// Fonts
+	--font-primary: 'Heebo', sans-serif;
+	--font-secondary: 'Roboto', sans-serif;
+
+	// Headings
+
+	--heading-1-color: var(--light);
+	--heading-1-size: 60px;
+	--heading-1-line: 1.2;
+	--heading-1-weight: 300;
+	--heading-1-letter: normal;
+	--heading-1-transform: capitalize;
+	--heading-1-font: var(--font-primary);
+	--heading-1-font-style: normal;
+
+	@media screen and (max-width: $width-tablet) {
+		--heading-1-size: 32px;
+		--heading-1-line: 1.37;
+	}
+
+	--heading-2-color: var(--primary-dark);
+	--heading-2-size: 11px;
+	--heading-2-line: 1.82;
+	--heading-2-weight: 500;
+	--heading-2-letter: 0.34em;
+	--heading-2-transform: uppercase;
+	--heading-2-font: var(--font-primary);
+	--heading-2-font-style: normal;
+
+	@media screen and (max-width: $width-tablet) {
+		--heading-2-line: 1.6;
+	}
+
+	--heading-3-size: 18px;
+	--heading-3-line: 1.56;
+	--heading-3-weight: normal;
+	--heading-3-letter: 0.029em;
+	--heading-3-transform: none;
+	--heading-3-font: var(--font-primary);
+	--heading-3-font-style: normal;
+	--heading-3-color: var(--grey-200);
+
+	--body-color: var(--light);
+	--body-size: 16px;
+	--body-line: 1.75;
+	--body-weight: normal;
+	--body-letter: normal;
+	--body-transform: none;
+	--body-font: var(--font-primary);
+	--body-font-style: normal;
+
+	@media screen and (max-width: $width-tablet) {
+		--body-size: 14px;
+		--body-line: 1.57;
+	}
+
+	--body-small-color: var(--primary-dark);
+	--body-small-size: 12px;
+	--body-small-line: 20px;
+	--body-small-weight: normal;
+	--body-small-letter: normal;
+	--body-small-transform: none;
+	--body-small-font: var(--font-primary);
+	--body-small-font-style: normal;
+
+	// Button
+	--button-size: 16px;
+	--button-line: 1.6;
+	--button-weight: bold;
+	--button-letter: normal;
+	--button-transform: none;
+	--button-font: var(--font-primary);
+	--button-font-style: normal;
+
+	// Tagline
+	--tagline-size: 10px;
+	--tagline-line: 2;
+	--tagline-weight: 500;
+	--tagline-letter: 0.55em;
+	--tagline-transform: none;
+	--tagline-font: var(--font-primary);
+	--tagline-font-style: normal;
+	--tagline-color: var(--grey-200);
+}

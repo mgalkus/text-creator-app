@@ -1,0 +1,93 @@
+.footer {
+	background: #000;
+
+	&-container {
+		margin: 0 auto;
+		max-width: calc(1110px + 32px + 32px);
+		width: 100%;
+		padding: 80px 32px 160px;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 0.466667px;
+		display: flex;
+
+		@media screen and (max-width: $width-tablet) {
+			flex-direction: column;
+			padding: 48px 32px 120px;
+		}
+	}
+
+	&-logo {
+		width: 73px;
+		height: 33.64px;
+		margin-right: 100px;
+		margin-bottom: 20.36px;
+
+		@media screen and (max-width: $width-tablet) {
+			margin: 0 0 32px 0;
+		}
+	}
+
+	&-builder,
+	&-pro,
+	&-logo-text {
+		font-weight: bold;
+		color: var(--light);
+		font-size: 14px;
+		margin-top: 6px;
+		margin-right: 100px;
+		display: flex;
+		flex-direction: column;
+		line-height: 20px;
+
+		@media screen and (max-width: $width-tablet) {
+			margin: 0 0 32px 0;
+		}
+	}
+
+	&-logo-text {
+		margin-top: 0;
+	}
+
+	&-builder,
+	&-pro {
+		.footer-text:not(:last-of-type) {
+			margin-bottom: 8px;
+
+			@media screen and (max-width: $width-tablet) {
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	&-login {
+		@media screen and (max-width: $width-tablet) {
+			width: 100%;
+			margin: 70px 0 0 0;
+		}
+	}
+
+	&-title {
+		margin-bottom: 27px;
+		width: max-content;
+
+		@media screen and (max-width: $width-tablet) {
+			margin-bottom: 16px;
+		}
+	}
+
+	&-text {
+		font-weight: 300;
+		width: max-content;
+		color: var(--light);
+		max-width: 180px;
+	}
+
+	a.footer-text:hover {
+		transition-duration: 0.2s;
+
+		opacity: 0.8;
+	}
+}

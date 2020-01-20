@@ -1,0 +1,239 @@
+.site-container {
+  width: 100vw;
+}
+
+.landing {
+  background: linear-gradient(
+    252.73deg,
+    var(--primary-accent) -8.13%,
+    var(--secondary-accent) 104.7%
+  );
+  position: relative;
+  overflow: hidden;
+
+  &-bubble {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.05);
+  }
+
+  &-bubble-1 {
+    width: 933.18px;
+    height: 936px;
+    left: -280px;
+    top: -300px;
+    animation: bubble1Turning 40s linear infinite;
+
+    @media screen and (max-width: $width-tablet) {
+      width: 343px;
+      height: 343px;
+      top: -200px;
+      left: -200px;
+      animation: bubble1TurningMobile 40s linear infinite;
+    }
+  }
+
+  &-bubble-2 {
+    width: 881px;
+    height: 881px;
+    top: 400px;
+    right: 0;
+    animation: bubble1Turning 40s linear infinite reverse;
+
+    @media screen and (max-width: $width-tablet) {
+      width: 343px;
+      height: 343px;
+      top: 340px;
+      right: -200px;
+      animation: bubble1TurningMobile 40s linear infinite reverse;
+    }
+  }
+
+  &-container {
+    padding-top: 80px;
+    padding-bottom: 200px;
+
+    @media screen and (max-width: $width-tablet) {
+      padding-top: 56px;
+      padding-bottom: 64px;
+    }
+
+    & > * {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-logo-link {
+    z-index: 999;
+    position: relative;
+    margin-bottom: 100px;
+    display: block;
+    width: 200px;
+
+    @media screen and (max-width: $width-tablet) {
+      margin-bottom: 72px;
+      width: 86px;
+      height: 40px;
+    }
+  }
+
+  &-disclaimer {
+    color: var(--accent-2-dark);
+    margin-bottom: 36px;
+    font-weight: bold;
+  }
+
+  &-title {
+    margin-bottom: 36px;
+    max-width: 738px;
+
+    @media screen and (max-width: $width-tablet) {
+      width: 82vw;
+      margin-bottom: 32px;
+    }
+  }
+
+  &-text {
+    max-width: 582px;
+    margin-bottom: 24px;
+
+    @media screen and (max-width: $width-tablet) {
+      width: 77vw;
+      margin-bottom: 56px;
+    }
+  }
+
+  &-round-container {
+    width: 26px;
+    height: 40px;
+    border: 1px solid var(--light);
+    box-sizing: border-box;
+    border-radius: 37px;
+    position: relative;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: $width-tablet) {
+      display: none;
+    }
+  }
+
+  &-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--light);
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: dotMovement 1.5s infinite;
+  }
+
+  &-spinner-container {
+    display: none;
+
+    &.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .spinner {
+        width: 148px;
+        height: 148px;
+        margin-bottom: 12px;
+        opacity: 1;
+        transition: opacity 1s;
+
+        @media screen and (max-width: $width-tablet) {
+          width: 100px;
+          height: 100px;
+        }
+
+        &.fading {
+          opacity: 0;
+        }
+      }
+
+      .circle {
+        position: absolute;
+        width: 148px;
+        height: 148px;
+        border-radius: 50%;
+        border: 9px solid transparent;
+
+        @media screen and (max-width: $width-tablet) {
+          width: 100px;
+          height: 100px;
+          border: 6px solid transparent;
+        }
+      }
+
+      .circle-1 {
+        animation: expandCircles 2s linear infinite;
+      }
+
+      .circle-2 {
+        animation: expandCircles 2s linear 1s infinite;
+      }
+    }
+  }
+
+  &-waiting-error-container {
+    display: none;
+
+    &.active {
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .waiting-error-img {
+      height: 80px;
+      width: 140px;
+      margin-bottom: 50px;
+    }
+
+    .waiting-error-text {
+      margin-bottom: 40px;
+    }
+
+    .waiting-error-button {
+      display: flex;
+      align-items: center;
+    }
+
+    .refresh-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 11px;
+    }
+  }
+
+  &-spinner-text {
+    display: none;
+
+    &.active {
+      display: block;
+      position: absolute;
+      bottom: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @media screen and (max-width: $width-tablet) {
+        width: 90%;
+        font-size: 13px;
+      }
+    }
+  }
+}

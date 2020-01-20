@@ -1,0 +1,87 @@
+.landing {
+	&-settings {
+		&-slider-container {
+			width: 100%;
+		}
+
+		&-slider {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			outline: none;
+			width: 100%;
+			height: 2px;
+			border-radius: 2px;
+			cursor: pointer;
+
+			transition: background 450ms ease-in;
+			-webkit-appearance: none;
+
+			@media screen and (max-width: $width-tablet) {
+				width: 100%;
+				height: 4px;
+			}
+		}
+
+		//Based on https://stackoverflow.com/a/57153340/12100458
+		&-length-slider {
+			background: linear-gradient(to right, var(--accent-1-accent) 0%, var(--accent-1-accent) 7.8%, var(--grey-300) 7.8%, var(--grey-300) 100%);
+		}
+
+		&-uniqueness-slider {
+			background: linear-gradient(to right, var(--accent-1-accent) 0%, var(--accent-1-accent) 67%, var(--grey-300) 67%, var(--grey-300) 100%);
+		}
+
+		&-deepness-slider {
+			background: linear-gradient(to right, var(--accent-1-accent) 0%, var(--accent-1-accent) 40%, var(--grey-300) 40%, var(--grey-300) 100%);
+		}
+
+		input[type='range']::-moz-focus-outer {
+			border: 0;
+		}
+
+		&-slider::-webkit-slider-thumb {
+			position: relative;
+			-webkit-appearance: none;
+			appearance: none;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: var(--accent-1-accent);
+			cursor: pointer;
+			transition: all 0.2s;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+			@media screen and (max-width: $width-tablet) {
+				width: 14px;
+				height: 14px;
+			}
+
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+
+		&-slider::-moz-range-thumb {
+			position: relative;
+			-moz-appearance: none;
+			appearance: none;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: var(--accent-1-accent);
+			cursor: pointer;
+			transition: all 0.2s;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+			border: none;
+
+			@media screen and (max-width: $width-tablet) {
+				width: 14px;
+				height: 14px;
+			}
+
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+}

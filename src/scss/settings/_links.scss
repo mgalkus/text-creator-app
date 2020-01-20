@@ -1,0 +1,9 @@
+:root {
+	--color-text-link-primary: var(--primary);
+	--color-text-link-primary-hover: var(--primary-accent);
+	--color-text-link-primary-down: var(--primary-dark);
+	--color-text-link-primary-disabled: var(--primary-light);
+
+	--link-transition-duration: 250ms;
+	--link-transition-function: ease-in-out;
+}

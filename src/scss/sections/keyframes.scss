@@ -1,0 +1,85 @@
+@keyframes bubble1Turning {
+	0% {
+		transform: rotate(0deg) translateX(100px) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg) translateX(100px) rotate(-360deg);
+	}
+}
+
+@keyframes bubble1TurningMobile {
+	0% {
+		transform: rotate(0deg) translateX(100px) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg) translateX(100px) rotate(-360deg);
+	}
+}
+
+@keyframes bubble2Turning {
+	0% {
+		transform: rotate(0deg) translateX(150px) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg) translateX(150px) rotate(-360deg);
+	}
+}
+
+@keyframes bubble2TurningMobile {
+	0% {
+		transform: rotate(0deg) translateX(150px) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg) translateX(150px) rotate(-360deg);
+	}
+}
+
+@keyframes dotMovement {
+	from {
+		opacity: 0.8;
+		top: 14px;
+	}
+
+	to {
+		opacity: 0;
+		top: calc(100% - 14px);
+	}
+}
+
+@keyframes settingsSlide {
+	from {
+		height: 0px;
+	}
+	to {
+		height: 227px;
+	}
+}
+
+@keyframes rotate-loader {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes expandCircles {
+	0% {
+		transform: scale(0);
+		border-color: var(--light);
+	}
+
+	30% {
+		border-color: var(--light);
+	}
+
+	100% {
+		transform: scale(1);
+		border-color: transparent;
+	}
+}
