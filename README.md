@@ -3,7 +3,7 @@ The project imitates text creation (dummy texts are provided), as I coulnd't use
 
 What I really enjoyed with this task was manipulating the DOM!
 
-[Live Version is hosted here](https://martynas-hostinger.000webhostapp.com).
+[Live Version is hosted here](https://textcreator.netlify.com/).
 
 ### Features
 - Text input valitation
