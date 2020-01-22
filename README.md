@@ -1,7 +1,7 @@
-A project imitating an AI Text Generator, similar to the one I built for [zyro.com](https://www.zyro.com).
-The project only imitates text creation (dummy texts are provided), as I coulnd't use the API.
+A project showcasing functionality of an AI Text Generator (I build a similar one for [zyro.com](https://www.zyro.com)).
+The project imitates text creation (dummy texts are provided), as I coulnd't use the API.
 
-PS. What I really enjoyed with this task was manipulating the DOM!
+What I really enjoyed with this task was manipulating the DOM!
 
 [Live Version is hosted here](https://martynas-hostinger.000webhostapp.com).
 
