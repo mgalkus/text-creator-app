@@ -11,7 +11,7 @@ What I really enjoyed with this task was manipulating the DOM!
 - Possibility to copy generated text
 - Modal window to generate text again
 - Responsive
-- Js code contains more comments and functionality and code decisions
+- Js code contains more comments on functionality and code decisions
 
 ### Down sides
 It was agreed the original project wouldn't use BEM and there was no focus on accessibility. I have'nt corrected these downside yet in this project either.
